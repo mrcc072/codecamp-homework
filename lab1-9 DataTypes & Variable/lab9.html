@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 9 </title>
+</head>
+<body>
+    <script>
+        let a = 1;  // a =1 b=undefined c=undefined d = undefined e = undefined
+        let b = 2;  // a = 1 b =2 c= undefined d = undefined e = undefined
+        let c = a++; // a=2 b = 2  c=1 d = undefined e = undefined
+        let d = ++c; // a = 2 b = 2 d=2 c=2 e = undefined 
+        let e = ++d  + d++ + d; // +dd คือบวกก่อนแล้วนำไปใช้ , d++ คือ ใช้ก่อนแล้วค่อยบวก ซึ่งค่าล่าสุดจะเป็น 4 , ดังนั้น d ค่าล่าสุด = 4 ซึ่งเท่ากับว่า 3+3+4 = 10 e=10 
+        
+        // a = 2 b = 2 c = 2 d = 4   e = 10
+        console.log(e)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3</title>
+</head>
+<body>
+    <script>
+    let a = undefined;
+    let b = '';
+    let c = !b; // c จะมีค่าเป็น true เพราะ !'' คือ true
+
+// แปลงค่าเป็น Boolean และเก็บใน d, e, f
+    let d = !!a; // d จะเป็น false (เพราะ undefined เป็น falsy)
+    let e = !!b; // e จะเป็น false (เพราะ '' เป็น falsy)
+    let f = !!c; // f จะเป็น true (เพราะ c เป็น true)
+
+// แสดงผลลัพธ์
+console.log(d);
+console.log(e);
+console.log(f);
+    </script>
+</body>
+</html>

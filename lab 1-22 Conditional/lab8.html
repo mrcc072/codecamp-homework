@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 8</title>
+</head>
+<body>
+    <script>
+        let score_1 = prompt('จงกรอกคะแนนที่ได้รับมา')
+        let message;
+        if(isNaN(score_1)) {
+            message = ' กรุณากรอกตัวเลข'
+        } else if (score_1>=80) {
+            message ='A'
+        } else if (score_1>=70 && score_1<=79) {  
+            message = 'B'
+        } else if (score_1>=60 && score_1<=69) {
+            message = 'C'
+        } else if (score_1>=50 && score_1<=59){
+            message = 'D'
+        } else 
+            message = 'F'
+    alert(message)
+    </script>
+</body>
+</html>

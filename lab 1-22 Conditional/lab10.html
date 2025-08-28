@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 10</title>
+</head>
+<body>
+    <script>
+        let user1 = prompt('จงกรอก username')
+        let pass1 = prompt('จงกรอก password')
+
+        let message;
+
+        if(user1 ==='') {
+            message = 'username is required '
+        } else if (pass1 ==='') {
+            message = 'password is required'
+        } else if ((user1 === 'admin' && pass1 === '1234')|| (user1 === 'john'&& pass1 ==='qwerty')) {
+            message = 'Hello'+ user1 ;
+        } else {
+            message = 'invalid username or password'
+        }
+
+    alert(message);
+    </script>
+</body>
+</html>

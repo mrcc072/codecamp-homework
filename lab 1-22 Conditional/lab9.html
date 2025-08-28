@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 9 </title>
+</head>
+<body>
+    <script>
+        // 1. รับตัวเลข 3 ตัวจากผู้ใช้
+let numA = prompt('กรุณากรอกตัวเลข A');
+let numB = prompt('กรุณากรอกตัวเลข B');
+let numC = prompt('กรุณากรอกตัวเลข C');
+
+// 2. แปลงค่าที่รับมาเป็นตัวเลข
+let n1 = Number(numA);
+let n2 = Number(numB);
+let n3 = Number(numC);
+
+let largest; // ตัวแปรสำหรับเก็บค่ามากที่สุด
+let middle;  // ตัวแปรสำหรับเก็บค่าตรงกลาง
+let smallest; // ตัวแปรสำหรับเก็บค่าน้อยที่สุด
+
+// ตรวจสอบว่า n1 เป็นตัวเลขที่มากที่สุดหรือไม่
+if (n1 >= n2 && n1 >= n3) {
+    largest = n1;
+    if (n2 >= n3) {
+        middle = n2;
+        smallest = n3;
+    } else {
+        middle = n3;
+        smallest = n2;
+    }
+}
+// ตรวจสอบว่า n2 เป็นตัวเลขที่มากที่สุดหรือไม่
+else if (n2 >= n1 && n2 >= n3) {
+    largest = n2;
+    if (n1 >= n3) {
+        middle = n1;
+        smallest = n3;
+    } else {
+        middle = n3;
+        smallest = n1;
+    }
+}
+// ถ้าไม่ใช่ n1 หรือ n2 แสดงว่า n3 เป็นตัวเลขที่มากที่สุด
+else {
+    largest = n3;
+    if (n1 >= n2) {
+        middle = n1;
+        smallest = n2;
+    } else {
+        middle = n2;
+        smallest = n1;
+    }
+}
+
+// แสดงผลลัพธ์
+alert('ตัวเลขที่เรียงจากมากไปน้อย: ' + largest + ', ' + middle + ', ' + smallest);
+    </script>
+</body>
+</html>
